@@ -18,7 +18,7 @@ class CollisionBox extends Sprite {
     }
 }
 export default class Utils {
-    static hitTestRectangle(a: Sprite, b: Sprite): boolean { //cchcialbym tutaj bezposrednio collisionbox :()
+    static hitTestRectangle(a: Sprite, b: Sprite): boolean {
 
         //Define the variables we'll need to calculate
         let hit, combinedHalfWidths, combinedHalfHeights, vx, vy;

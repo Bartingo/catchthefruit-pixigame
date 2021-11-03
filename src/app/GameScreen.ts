@@ -12,7 +12,7 @@ export class GameScreen {
     private playerContainer: Container;
     private keyManager: Keyboard = new Keyboard();
     private playerMoveController: PlayerMovementControl;
-    private scoreText: Text; // !todo przeniesc do klasy gui 
+    private scoreText: Text;
     private score: number = 0;
     private player: AnimatedSprite;
     private playerAnimSheet: Spritesheet;
@@ -129,7 +129,7 @@ export class GameScreen {
 
     private play() {
         this.timerManager.update();
-        this.timer.on('start', () => console.log('start'));
+        // this.timer.on('start', () => console.log('start'));
 
         this.playerMoveController.gameLoop();
 
